@@ -5,37 +5,196 @@ body {
     background-color: #FFFFFF;
     margin: 0;
     font-family: 'Space Mono';
+
+    p {
+        font-family: 'Pontano Sans';
+    }
+}
+
+.subheader {
+    font-family: 'Space Mono';
+    font-weight: bold;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    background-color: black;
 }
 
-nav ul {
+
+nav {
+    position: absolute;
     background-color: black;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    margin: 0;
-    list-style: none;
-    width: 40%;
-    text-align: left;
-    padding: 2em;
+}
 
-    li {
-     color: #FFFFFF;
-     margin: 1em 0;
+nav a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 20px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.visit-cta {
+    background-color: #624CAB;
+    border-radius: 30%;
+    padding: 5px 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.exhibits-cta {
+    background-color: #8CB83A;
+    border-radius: 40%;
+    padding: 5px 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.news-container {
+    border: #06BCC1;
+    padding: 10px 10px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.kids {
+    background-color: #8CB83A;
+    padding: 30px 40px;
+}
+
+.teachers {
+    background-color: #E49133;
+    padding: 30px 40px;
+}
+
+.researchers {
+    background-color: #624CAB;
+    padding: 30px 40px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #624CAB;
+    color: #FFFFFF;
+
+    p {
+        margin: 3em;
+    }
+}
+
+.exhibition-header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.exhibition-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px;
+}
 
 
+.get-involved-header {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
 
+.support-container {
+    background-color: #E49133;
+    padding: 30px 40px;
+}
+
+.volunteer-container {
+    background-color: #8CB83A;
+    padding: 30px 40px;
+}
+
+.internships-container {
+    background-color: #06BCC1;
+    padding: 30px 40px;
+}
+
+.visit-us-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #624CAB;
+    color: #FFFFFF;
+}
+
+.opening-location {
+    padding: 30px 40px;
+}
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        text-align: center;
     }
 }
 
 footer {
     background-color: black;
     color: #FFFFFF;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
