@@ -177,6 +177,10 @@ h5 {
 
 .opening-location {
     padding: 30px 40px;
+    
+    p {
+        font-size: 20px;
+    }
 }
 
 .about-logo {
